@@ -1,8 +1,14 @@
 {
     "name": "php-pm/httpkernel-adapter",
     "license": "MIT",
+    "repositories": [
+        {
+          "type": "git",
+          "url": "git@github.com:msales/php-pm.git"
+        }
+    ],
     "require": {
-        "php-pm/php-pm": "^1.0",
+        "php-pm/php-pm": "dev-master#9fef2378b8d89ce915c45b842f16a336a06b1dd7",
         "symfony/http-foundation": "^2.6|^3.0",
         "symfony/http-kernel": "^2.6|^3.0",
         "ringcentral/psr7": "^1.2"
@@ -11,5 +17,7 @@
         "psr-4": {
             "PHPPM\\": ""
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
